@@ -1,0 +1,28 @@
+{
+	"name": "trabalho_futuro_caracteristicas",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "origem",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "trabalho_futuro_caracteristicas.csv",
+				"container": "origemrm557188"
+			},
+			"columnDelimiter": ";",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Id_Pesquisa;Estado;Cidade;Genero;Idade;Profissao",
+				"type": "String"
+			}
+		]
+	}
+}
